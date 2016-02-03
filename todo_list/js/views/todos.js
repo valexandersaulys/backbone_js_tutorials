@@ -35,7 +35,7 @@ app.TodoView = Backbone.View.extend({
             this.model.save({ title: value });
         }
 
-        this.$el.removeclass('editing');
+        this.$el.removeClass('editing');
     },
 
     updateOnEnter: function(e) {

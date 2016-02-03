@@ -65,7 +65,7 @@ app.AppView = Backbone.View.extend({
     addAll: function () {
         this.$('#todo-list').html('');
         app.Todos.each(this.addOne, this);
-    }
+    },
 
     filterOne: function( todo ) {
         todo.trigger('visible');
@@ -80,7 +80,7 @@ app.AppView = Backbone.View.extend({
             title: this.$input.val().trim(),
             order: app.Todos.nextOrder(),
             completed: false
-        },
+        }
     },
 
     createOnEnter: function( event ) {
